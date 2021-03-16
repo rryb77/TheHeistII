@@ -10,7 +10,7 @@ namespace TheHeistII
         {
             get
             {
-                int TotalScore = CashOnHand + AlarmScore + VaultScore + SecurityGuardScore;
+                int TotalScore = AlarmScore + VaultScore + SecurityGuardScore;
                 if (TotalScore > 0)
                 {
                     return true;

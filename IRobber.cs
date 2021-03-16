@@ -6,6 +6,8 @@ namespace TheHeistII
         int SkillLevel { get; set; }
         int PercentageCut { get; set; }
 
+        string Specialty { get; set; }
+
         void PerformSkill(int bank);
     }
 }

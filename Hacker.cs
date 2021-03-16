@@ -8,6 +8,8 @@ namespace TheHeistII
         public int SkillLevel { get; set; }
         public int PercentageCut { get; set; }
 
+        public string Specialty { get; set; }
+
         public void PerformSkill(int Bank)
         {
             int NewAlarmScore = Bank - SkillLevel;
