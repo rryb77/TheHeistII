@@ -210,19 +210,23 @@ namespace TheHeistII
                 }
             }
 
+            Hacker.AnimateHacker();
 
             foreach (var member in crew)
             {
                 if (member.Specialty == "Hacker")
                 {
+                    member.PerformSkill(theBank.AlarmScore);
                     theBank.AlarmScore -= member.SkillLevel;
                 }
                 else if (member.Specialty == "Muscle")
                 {
+                    member.PerformSkill(theBank.SecurityGuardScore);
                     theBank.SecurityGuardScore -= member.SkillLevel;
                 }
                 else
                 {
+                    member.PerformSkill(theBank.VaultScore);
                     theBank.VaultScore -= member.SkillLevel;
                 }
             }
